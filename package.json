@@ -1,5 +1,5 @@
 {
-  "name": "VueSimpleTimeLine",
+  "name": "vuesimpletimeline",
   "version": "0.1.0",
   "main": "dist/VueSimpleTimeLine.umd.js",
   "module": "dist/VueSimpleTimeLine.esm.js",
