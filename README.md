@@ -2,6 +2,10 @@
 
 Minified Vue Timeline is a minimalistic timeline component for vue-js.
 
+## View
+
+![alt text](https://res.cloudinary.com/aolfiligre/image/upload/v1586633454/Screenshot_2020-04-11_at_8.26.37_PM.png "image")
+
 ## Installation
 
 The usual ways:
