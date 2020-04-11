@@ -1,18 +1,25 @@
 <template>
   <main>
     <div class="main-timeline">
-      <div v-for="(time,index) in newTimeLine" :key="index">
+      <div v-for="(time, index) in newTimeLine" :key="index">
         <div class="timeline-container">
           <div :class="`time${index}`" class="time">
-            <div class="timer">{{time.date}}</div>
-            <div :style="`background:${time.iconDotsColor}`" class="iconDot"></div>
+            <div class="timer">{{ time.date }}</div>
+            <div
+              :style="`background:${time.iconDotsColor}`"
+              class="iconDot"
+            ></div>
           </div>
           <div class="kred">
-            <div class="history" v-for="(dats,index) in time.history" :key="index">
+            <div
+              class="history"
+              v-for="(dats, index) in time.history"
+              :key="index"
+            >
               <div class="history-body">
-                <div class="data-name">{{dats.name}}</div>
-                <div class="data-summary">{{dats.summary}}</div>
-                <div class="data-time">{{dats.time}}</div>
+                <div class="data-name">{{ dats.name }}</div>
+                <div class="data-summary">{{ dats.summary }}</div>
+                <div class="data-time">{{ dats.time }}</div>
               </div>
             </div>
           </div>
@@ -27,12 +34,12 @@ export default {
   props: {
     Timeline: {
       type: Array,
-      required: true
+      required: true,
     },
     TimelineColor: {
       type: String,
-      default: "#D4D9DD"
-    }
+      default: "#D4D9DD",
+    },
   },
   watch: {
     TimelineColor: {
@@ -44,13 +51,13 @@ export default {
             x
           );
         }
-      }
-    }
+      },
+    },
   },
   computed: {
     newTimeLine() {
       return this.Timeline;
-    }
+    },
   },
   mounted() {
     let k = this.Timeline.length - 1;
@@ -61,13 +68,16 @@ export default {
       `.time${k}::after { color: green }`,
       0
     );
-  }
+  },
 };
 </script>
 
 <style>
 :root {
   --selection-background: black;
+}
+.main-timeline {
+  margin-top: 50px;
 }
 .timeline-container {
   display: flex;
