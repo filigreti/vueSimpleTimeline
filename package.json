@@ -1,6 +1,6 @@
 {
   "name": "minified-vue-timeline",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "main": "dist/minified-vue-timeline.umd.js",
   "module": "dist/minified-vue-timeline.esm.js",
   "unpkg": "dist/minified-vue-timeline.min.js",
